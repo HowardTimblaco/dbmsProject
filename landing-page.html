@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Group 4 System</title>
+</head>
+<style>
+    landingpage.css
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{	
+	min-height: 600px;
+	width: 100%;
+	position: relative;
+	font-family: sans-serif;
+	background-image: url("bg4.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.content{
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.home{
+	width: 300px;
+	height: 400px;
+	position: relative;
+
+}
+.home img{
+	width: 100%;
+	border-radius: 50%;
+}
+.btns{
+	width: 100%;
+	height: 95px;
+	display: flex;
+	
+}
+.btns form{
+	width: 100%;
+	height: 95px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btns form button{
+	width: 40%;
+	height: 20px;
+	margin: 0 10% 0 10%;
+	font-weight: 600;
+	color: white;
+	background-color: #697739;
+	outline: none;
+	cursor: pointer;
+	
+}
+.menuOnclick{
+	background-color: white;
+	height: 100px;
+
+}
+</style>
+<body>
+
+
+
+<div class="content">
+	<div class="home">
+		<img src="logo.jpeg">
+		<div class="btns">
+			<form name="myForm" action="">
+			<button id="login" name="login">Login</button>
+			<button id="register" name="register">Register</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="landingpage.css">
+<script type="text/javascript" src="landingpage.js">
+    landingpage.css
+var login = document.getElementById('login')
+var register = document.getElementById('register')
+var myForm = document.myForm;
+
+
+login.addEventListener("click",function(){
+	myForm.action = "login.html";
+})
+
+register.addEventListener("click",function(){
+	myForm.action = "register.html";
+})
+
+
+</script>
+</body>
+</html>

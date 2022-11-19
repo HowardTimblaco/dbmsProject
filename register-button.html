@@ -1,0 +1,164 @@
+register.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        register.css
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{	
+	min-height: 700px;
+	width: 100%;
+	position: relative;
+	font-family: sans-serif;
+	background-position: center;
+	background-size: cover;
+	background-image: url("bg4.png");
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.register-container{
+	width: 330px;
+	height: 400px;
+	background-color: maroon;
+	color: white;
+	border-radius: 10%;
+	box-shadow: -10px -10px 10px rgba(0,0,0,0.3),
+				10px 10px 10px rgba(255,255,255,0.1),
+				-10px -10px 10px rgba(0,0,0,0.3),
+				10px 10px 10px rgba(255,255,255,0.1);
+
+}
+.register-container h2{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+.details{
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+.details table tr th{
+	width: 100px;
+}
+
+.details table tr td {
+	width: 180px;
+}
+.details table tr td input{
+	width: 100%;
+	box-shadow: 0 3px 10px rgba(255,255,255,0.3);
+}
+.details button{
+	background-color: green;
+	width: 30%;
+	height: 30px;
+	margin: 20px 0 0 35%;
+	cursor: pointer;
+}	
+
+.details-radio{
+	width: 100%;
+	position: relative;
+}
+.details-radio table tr th {
+	width: 80px;
+}
+.details-radio table tr td{
+
+	width: 150px;
+}
+.details-radio table tr:nth-child(1) th{
+	padding-left: 50px;
+}
+label{
+	cursor: pointer;
+}
+label:hover{
+	color: black;
+}
+    </style>
+</head>
+<body>	
+
+<div class="register-container">
+	<h2>Register</h2>
+	<form>
+	<div class="details">
+		<table>
+		<tr>
+		<th><label for="name">Name</label></th>
+		<td><input type="text" name="name" id="name" required></td>
+		</tr>
+		</table>
+	</div>
+	<div class="details">
+		<table>
+		<tr>
+		<th><label for="age">Age</label></th>
+		<td><input type="number" name="age" id="age" required></td>
+		</tr>
+		</table>
+	</div>
+	<div class="details-radio">
+		<table>
+			<tr>
+				<th><label>Gender</label></th>
+			</tr>			
+			<tr>
+				<th><label for="male">Male</label></th>
+				<td><input type="radio" name="gender" value="male" id="male" readonly></td>
+				<th><label for="female">Female</label></th>
+				<td><input type="radio" name="gender" value="female" id="female" required></td>
+			</tr>
+			
+		</table>
+		
+	</div>
+	<div class="details">
+		<table>
+		<tr>
+		<th><label for="bday">Birthday</label></th>
+		<td><input type="date" name="bday" id="bday" required></td>
+		</tr>
+		</table>
+	</div>
+	<div class="details">
+		<table>
+		<tr>
+		<th><label for="mobileNum">Mobile Number</label></th>
+		<td><input type="number" name="mobileNum" id="mobileNum" required></td>
+		</tr>
+		</table>
+	</div>
+	<div class="details">
+		<table>
+		<tr>
+		<th><label for="email">Email</label></th>
+		<td><input type="email" name="email" id="email" required></td>
+		</tr>
+		</table>
+	</div>
+	<div class="details">
+		<button type="submit" name="submit">Submit</button>
+	</div>
+	</form>
+</div>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="register.css">
+
+</body>
+</html>
